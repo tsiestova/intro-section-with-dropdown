@@ -5,7 +5,6 @@
   max-width: 240px;
   width: 100%;
   border: none;
-  padding: 21px 24px;
   height: 100%;
 
   .dropdown__list {
@@ -58,6 +57,12 @@
   }
 }
 
+.modal__inner {
+  padding: 21px 24px;
+  height: 100%;
+  width: 100%;
+}
+
 .btn__wrap {
   text-align: right;
 }
@@ -83,5 +88,72 @@
     @include body-text;
     margin-bottom: 24px;
     display: inline-block;
+  }
+
+  .dropdown__list {
+    display: none;
+  }
+
+  &.active {
+    > .nav__item__link + .dropdown__list {
+      display: block;
+    }
+  }
+}
+
+.modal[open] {
+  animation: show 150ms ease;
+}
+
+.modal {
+  &.close {
+    animation: hideModal 150ms ease;
+
+    &::backdrop {
+      animation: haideBackDrop 150ms ease;
+    }
+  }
+}
+
+.modal::backdrop {
+  background: #151515;
+  opacity: 0.75;
+  animation: backdrop 150ms ease;
+}
+
+@keyframes show {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hideModal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes backdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.75;
+  }
+}
+
+@keyframes hideBackdrop {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 0;
   }
 }

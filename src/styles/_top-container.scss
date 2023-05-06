@@ -13,6 +13,7 @@
   }
 
   img {
+    margin: auto;
     @include breakpoint(desktop) {
       width: 100%;
       height: 100%;

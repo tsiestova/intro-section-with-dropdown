@@ -1,12 +1,11 @@
 .text__container_wrap {
-  padding-top: 100px;
-
   @include breakpoint(desktop) {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: self-start;
     justify-content: space-between;
+    padding-top: 100px;
   }
 }
 
@@ -61,11 +60,11 @@
 }
 
 .text__container__description {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
   text-align: center;
   color: #686868;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   @include heading-text;
 
   @include breakpoint(desktop) {

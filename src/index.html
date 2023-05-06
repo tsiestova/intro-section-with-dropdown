@@ -37,8 +37,10 @@
             </div>
             <nav class="nav__menu">
               <ul class="nav__links">
-                <li class="nav__item nav__item_features">
-                  <a class="nav__item__link" href="#">Features</a>
+                <li class="nav__item nav__item_features" data-dropdown>
+                  <a class="nav__item__link" href="#" data-dropdown-btn
+                    >Features</a
+                  >
                   <ul class="dropdown__list dropdown__list_features">
                     <li class="dropdown__item item__todo">Todo List</li>
                     <li class="dropdown__item item__calendar">Calendar</li>
@@ -47,16 +49,22 @@
                   </ul>
                 </li>
 
-                <li class="nav__item nav__item_company">
-                  <a href="#" class="nav__item__link">Company</a>
+                <li class="nav__item nav__item_company" data-dropdown>
+                  <a href="#" class="nav__item__link" data-dropdown-btn
+                    >Company</a
+                  >
                   <ul class="dropdown__list dropdown__list_company">
                     <li class="dropdown__item">History</li>
                     <li class="dropdown__item">Our Team</li>
                     <li class="dropdown__item">Blog</li>
                   </ul>
                 </li>
-                <li class="nav__item"><a href="#">Careers</a></li>
-                <li class="nav__item"><a href="#">About</a></li>
+                <li class="nav__item">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">About</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -117,13 +125,17 @@
     </main>
 
     <dialog class="modal" data-modal>
-      <div class="modal__inner">
+      <div class="modal__inner" modal-inner>
         <div class="btn__wrap">
           <button type="button" id="close-modal" class="btn"></button>
         </div>
         <nav class="modal__menu__list">
-          <li class="modal__nav__item nav__item_features">
-            <a href="#">Features</a>
+          <li
+            class="modal__nav__item nav__item nav__item_features"
+            data-dropdown
+            data-modal
+          >
+            <a href="#" class="nav__item__link" data-dropdown-btn>Features</a>
             <ul class="dropdown__list dropdown__list_features">
               <li class="dropdown__item item__todo">Todo List</li>
               <li class="dropdown__item item__calendar">Calendar</li>
@@ -131,8 +143,12 @@
               <li class="dropdown__item item__planing">Planning</li>
             </ul>
           </li>
-          <li class="modal__nav__item nav__item_company">
-            <a href="#">Company</a>
+          <li
+            class="modal__nav__item nav__item nav__item_company"
+            data-dropdown
+            data-modal
+          >
+            <a href="#" data-dropdown-btn class="nav__item__link">Company</a>
             <ul class="dropdown__list dropdown__list_company">
               <li class="dropdown__item">History</li>
               <li class="dropdown__item">Our Team</li>
