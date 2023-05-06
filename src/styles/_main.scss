@@ -1,0 +1,17 @@
+.main-content__wrap {
+  @include breakpoint(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 125px;
+  }
+}
+
+.company__list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  justify-content: center;
+}
+
+.company__item {
+}

@@ -1,0 +1,11 @@
+
+
+@mixin heading-text {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+}
+
+@mixin body-text {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 500;
+}

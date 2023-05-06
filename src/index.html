@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Workit landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="layout">
+        <div class="header__wrap">
+          <div class="header__column">
+            <div class="header__img">
+              <a href="#">
+                <img src="./assets/images/logo.svg" alt="" />
+              </a>
+            </div>
+            <nav class="nav__menu">
+              <ul class="nav__links">
+                <li class="nav__item nav__item_features">
+                  <a class="nav__item__link" href="#">Features</a>
+                  <ul class="dropdown__list dropdown__list_features">
+                    <li class="dropdown__item item__todo">Todo List</li>
+                    <li class="dropdown__item item__calendar">Calendar</li>
+                    <li class="dropdown__item item__reminders">Reminders</li>
+                    <li class="dropdown__item item__planing">Planning</li>
+                  </ul>
+                </li>
+
+                <li class="nav__item nav__item_company">
+                  <a href="#" class="nav__item__link">Company</a>
+                  <ul class="dropdown__list dropdown__list_company">
+                    <li class="dropdown__item">History</li>
+                    <li class="dropdown__item">Our Team</li>
+                    <li class="dropdown__item">Blog</li>
+                  </ul>
+                </li>
+                <li class="nav__item"><a href="#">Careers</a></li>
+                <li class="nav__item"><a href="#">About</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="links__wrap">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="register">Register</a>
+          </div>
+        </div>
+        <button type="button" class="burger__menu" id="open"></button>
+      </div>
+    </header>
+    <main>
+      <div class="main-content__wrap">
+        <div class="top__container">
+          <picture class="top__container__pic">
+            <source
+              media="(min-width:900px)"
+              srcset="./assets/images/image-hero-desktop.png"
+            />
+            <source
+              media="(min-width:601px)"
+              srcset="./assets/images/image-hero-mobile.png"
+            />
+            <img src="./assets/images/image-hero-mobile.png" alt="image hero" />
+          </picture>
+        </div>
+        <div class="text__container_wrap">
+          <div class="text__container">
+            <div class="layout">
+              <div class="text__container__heading">Make remote work</div>
+              <div class="text__container__description">
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </div>
+              <button type="button" class="btn">Learn more</button>
+            </div>
+          </div>
+          <div class="company__list__wrap">
+            <div class="layout">
+              <ul class="company__list">
+                <li class="company__item">
+                  <img src="./assets/images/client-databiz.svg" alt="" />
+                </li>
+                <li class="company__item">
+                  <img src="./assets/images/client-audiophile.svg" alt="" />
+                </li>
+                <li class="company__item">
+                  <img src="./assets/images/client-meet.svg" alt="" />
+                </li>
+                <li class="company__item">
+                  <img src="./assets/images/client-maker.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <dialog class="modal" data-modal>
+      <div class="modal__inner">
+        <div class="btn__wrap">
+          <button type="button" id="close-modal" class="btn"></button>
+        </div>
+        <nav class="modal__menu__list">
+          <li class="modal__nav__item nav__item_features">
+            <a href="#">Features</a>
+            <ul class="dropdown__list dropdown__list_features">
+              <li class="dropdown__item item__todo">Todo List</li>
+              <li class="dropdown__item item__calendar">Calendar</li>
+              <li class="dropdown__item item__reminders">Reminders</li>
+              <li class="dropdown__item item__planing">Planning</li>
+            </ul>
+          </li>
+          <li class="modal__nav__item nav__item_company">
+            <a href="#">Company</a>
+            <ul class="dropdown__list dropdown__list_company">
+              <li class="dropdown__item">History</li>
+              <li class="dropdown__item">Our Team</li>
+              <li class="dropdown__item">Blog</li>
+            </ul>
+          </li>
+          <li class="modal__nav__item"><a href="#">Careers</a></li>
+          <li class="modal__nav__item"><a href="#">About</a></li>
+        </nav>
+        <div class="links__wrap">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="register">Register</a>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

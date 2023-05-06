@@ -1,0 +1,22 @@
+.top__container {
+  margin-bottom: 48px;
+
+  @include breakpoint(desktop) {
+    height: 640px;
+    flex: 1;
+  }
+}
+
+.top__container__pic {
+  @include breakpoint(desktop) {
+    height: 100%;
+  }
+
+  img {
+    @include breakpoint(desktop) {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
