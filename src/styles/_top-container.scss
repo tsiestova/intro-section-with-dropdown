@@ -3,7 +3,9 @@
 
   @include breakpoint(desktop) {
     height: 640px;
-    flex: 1;
+    padding-left: 134px;
+    padding-top: 45px;
+    width: 100%;
   }
 }
 

@@ -1,11 +1,13 @@
 .text__container_wrap {
   @include breakpoint(desktop) {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: self-start;
     justify-content: space-between;
-    padding-top: 100px;
+    padding-top: 143px;
+    max-width: 550px;
+    flex-shrink: 0;
+    width: 100%;
   }
 }
 
@@ -13,7 +15,7 @@
   margin-bottom: 48px;
 
   @include breakpoint(desktop) {
-    margin-bottom: 108px;
+    margin-bottom: 110px;
   }
 
   .btn {
@@ -29,6 +31,12 @@
     display: block;
     margin: auto;
     border: 1px solid transparent;
+
+    @include breakpoint(desktop) {
+      display: inline-block;
+      text-align: left;
+      padding: 12px 36px;
+    }
 
     &:hover {
       @include breakpoint(desktop) {
@@ -54,8 +62,11 @@
 
   @include breakpoint(desktop) {
     font-size: 80px;
+    display: inline-block;
+    text-align: left;
     line-height: 80px;
     letter-spacing: -1.11111px;
+    margin-bottom: 52px;
   }
 }
 
@@ -70,5 +81,9 @@
   @include breakpoint(desktop) {
     font-size: 18px;
     line-height: 28px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 50px;
+    max-width: 437px;
   }
 }

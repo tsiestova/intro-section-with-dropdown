@@ -2,7 +2,8 @@
   @include breakpoint(desktop) {
     display: flex;
     flex-direction: row-reverse;
-    gap: 125px;
+    max-width: 1145px;
+    margin: auto;
   }
 }
 

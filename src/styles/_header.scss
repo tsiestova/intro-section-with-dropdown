@@ -1,6 +1,10 @@
 .header {
   height: 75px;
 
+  @include breakpoint(desktop) {
+    height: 90px;
+  }
+
   .layout {
     height: 100%;
     display: flex;
