@@ -14,6 +14,14 @@
 .text__container {
   margin-bottom: 48px;
 
+  .layout {
+    text-align: center;
+
+    @include breakpoint(desktop) {
+      text-align: left;
+    }
+  }
+
   @include breakpoint(desktop) {
     margin-bottom: 110px;
   }
@@ -24,12 +32,13 @@
     text-align: center;
     letter-spacing: -0.222222px;
     color: #fafafa;
+    text-decoration: none;
+    display: inline-block;
+
     @include heading-text;
     background: #151515;
     border-radius: 15px;
     padding: 12px 24px;
-    display: block;
-    margin: auto;
     border: 1px solid transparent;
 
     @include breakpoint(desktop) {
