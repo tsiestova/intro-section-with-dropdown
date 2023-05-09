@@ -7,6 +7,11 @@
   border: none;
   height: 100%;
 
+  a {
+    text-decoration: none;
+    color: #686868;
+  }
+
   .dropdown__list {
     position: relative;
     border: none;
@@ -14,6 +19,8 @@
     top: 0;
     min-width: 100%;
     padding: 0 0 0 15px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .btn {
@@ -22,7 +29,6 @@
     height: 24px;
     background: transparent;
     text-align: right;
-    margin-bottom: 29px;
     display: inline-block;
     text-decoration: none;
 
@@ -66,6 +72,7 @@
 
 .btn__wrap {
   text-align: right;
+  margin-bottom: 34px;
 }
 
 .modal__menu__list {
@@ -81,13 +88,12 @@
   list-style: none;
   margin-bottom: 16px;
 
-  a {
+  .nav__item__link {
     text-decoration: none;
     font-size: 16px;
     line-height: 26px;
     color: #686868;
     @include body-text;
-    margin-bottom: 24px;
     display: inline-block;
   }
 

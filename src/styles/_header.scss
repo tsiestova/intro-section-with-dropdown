@@ -214,7 +214,8 @@
 .nav__item_company {
   position: relative;
 
-  a {
+  .nav__item__link {
+    background: transparent;
     &:after {
       content: "";
       background: url(./assets/images/icon-arrow-down.svg) no-repeat;
